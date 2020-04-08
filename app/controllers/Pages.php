@@ -4,10 +4,13 @@ class Pages extends Controller{
       
     }
     public function index(){
-      
+      $data=[
+        'title'=>'My Title'
+      ];
+      $this->view('pages/index', $data);
     }
     public function about($id){
-  echo $id;
+      $this->view('pages/about');
     }
 }
 

@@ -50,5 +50,7 @@ class Core{
             $url=explode('/', $url);
             return $url;
         }
+        $url[0]='/index';
+        return $url;
     }
 }

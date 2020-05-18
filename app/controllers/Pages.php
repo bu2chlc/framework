@@ -1,7 +1,7 @@
 <?php
 class Pages extends Controller{
     public function __construct(){
-      
+      // echo "pages construct";
     }
     public function index(){
       $data=[
@@ -9,8 +9,8 @@ class Pages extends Controller{
       ];
       $this->view('pages/index', $data);
     }
-    public function about($id){
-      $this->view('pages/about');
+    public function about(){
+$this->view('pages/about');
     }
 }
 
